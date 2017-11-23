@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<style>
+* {box-sizing:border-box}
+body {
+  font-family: Verdana,sans-serif;
+  margin:0
+}
+
+.body{
+  background: radial-gradient(white,#00B8D4);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;  
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators 
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;	
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.description{
+  max-width: 100;
+  align-content: center;
+  text-align: center;
+}
+.opacity{
+  opacity: 0.7
+}
+.article{
+  width: 100%;
+}
+.art{
+  float: left;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+  padding: 100px;
+}
+
+.card_img{
+  width: 100px;
+  height: 100px;
+  content: center;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover{
+  opacity: 0.7;
+}
+
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter{
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube{
+  background: #BB0000;
+  color: white;
+}
+.fa-instagram{
+  background: #125688;
+  color: white;
+}
+
+.img{
+  width: 30px;
+  height: 30px;
+  content: center;
+}
+
+footer{
+  padding-top: 50px;
+  text-align: center;
+}
+
+.h2-footer{
+  padding-bottom: 20px;
+}
+
+</style>
+</head>
+
+
+
+
+
+
+<body class="body">
+
+<div class="topnav">
+  <a class="active" href="slideshow.html">HOME</a>
+  <a href="page2.html">PAGE2</a>
+  <a href="slideshow.html">CONTACT</a>
+  <a href="slideshow.html">MEH</a>    
+  </div>
+
+<section>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="../img/trial.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="../img/trial2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="../img/trial3.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</section>
+
+</div>
+<br>
+
+<section class="description">
+  <h2>SOMETHING NEW WITH AJAX</h2>
+  <p class="opacity"><i>Philanthropist</i></p>
+  <p>Blah Blah bdlsfsndkljdijfdmf.mdjjfdkvosjdfoihchchafvnbf,bckjbxkfBlah Blah bdlsfsndkljdijfdmf.mdjjfdkvosjdfoihchchafvnbf,bckjbxkfBlah Blah bdlsfsndkljdijfdmf.mdjjfdkvosjdfoihchchafvnbf,bckjbxkfBlah Blah bdlsfsndkljdijfdmf.mdjjfdkvosjdfoihchchafvnbf,bckjbxkfBlah Blah bdlsfsndkljdijfdmf.mdjjfdkvosjdfoihchchafvnbf,bckjbxkfBlah Blah bdlsfsndkljdijfdmf.mdjjfdkvosjdfoihchchafvnbf,bckjbxkfBlah Blah bdlsfsndkljdijfdmf.mdjjfdkvosjdfoihchchafvnbf,bckjbxkfBlah Blah bdlsfsndkljdijfdmf.mdjjfdkvosjdfoihchchafvnbf,bckjbxkfBlah Blah bdlsfsndkljdijfdmf.mdjjfdkvosjdfoihchchafvnbf,bckjbxkfBlah Blah bdlsfsndkljdijfdmf.mdjjfdkvosjdfoihchchafvnbf,bckjbxkfBlah Blah bdlsfsndkljdijfdmf.mdjjfdkvosjdfoihchchafvnbf,bckjbxkf</p>
+</section>
+
+<section class="article">
+  <article class="art">
+    <p>Ajax</p>
+    <img class="card_img" src="../img/First.jpg">
+    <p>Yeah Baby!!</p>
+  </article>
+  <article class="art">
+    <p>Ajax</p>
+    <img class="card_img" src="../img/First.jpg">
+    <p>Yeah Baby!!</p>
+  </article>
+  <article class="art">
+    <p>Ajax</p>
+    <img class="card_img" src="../img/First.jpg">
+    <p>Yeah Baby!!</p>
+  </article>
+  <article class="art">
+    <p>Ajax</p>
+    <img class="card_img" src="../img/First.jpg">
+    <p>Yeah Baby!!</p>
+  </article>
+  <article class="art">
+    <p>Ajax</p>
+    <img class="card_img" src="../img/First.jpg">
+    <p>Yeah Baby!!</p>
+  </article>
+</section>
+
+<!--
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+-->
+
+<footer>
+
+  <a href="https://www.facebook.com" class="fa fa-facebook"><img class="img" src="../img/fb.png"></a>
+  <a href="https://www.instagram.com/somethingnewwithajax/" class="fa fa-instagram"><img class="img" src="../img/insta.png"></a>
+  <a href="https://www.youtube.com/channel/UCqE1QBY0SGFLVXPA8db6BrA" class="fa fa-youtube"><img class="img" src="../img/yt.jpeg"></a>
+  <a href="" class="fa fa-twitter"><img class="img" src="../img/tw.png"></a>
+</footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+var slideIndex = 0;
+timeSlides();
+
+function timeSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+   // setTimeout(timeSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
